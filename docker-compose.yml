@@ -50,6 +50,7 @@ services:
       - internal
     volumes:
       - ${TRAFFIC_DIR_HOST}:${TRAFFIC_DIR_DOCKER}:ro
+      - ./services.json:/services.json:ro
     environment:
       TIMESCALE: ${TIMESCALE}
       TULIP_TRAFFIC_DIR: ${TRAFFIC_DIR_DOCKER}
