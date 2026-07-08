@@ -1,6 +1,6 @@
 #!/bin/bash
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
-INTERVAL=30
+INTERVAL=60
 
 echo "Polling for pcaps every ${INTERVAL}s. Press Ctrl+C to stop."
 while true; do
